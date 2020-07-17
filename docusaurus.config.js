@@ -1,16 +1,16 @@
 module.exports = {
   title: 'd.rex',
   tagline: 'Docusaurus based README docs generator',
-  url: 'https://github.com/tool3/reptile',
+  url: 'https://github.com/tool3/d.rex',
   baseUrl: '/',
   favicon: 'img/favicon.ico',
   organizationName: 'tool3',
-  projectName: 'reptile',
+  projectName: 'd.rex',
   themeConfig: {
     navbar: {
       title: 'd.rex',
       logo: {
-        alt: 'Reptile Logo',
+        alt: 'd.re logo',
         src: 'img/logo.svg',
       },
       links: [
@@ -22,7 +22,7 @@ module.exports = {
         },
         // { to: 'blog', label: 'Blog', position: 'left' },
         {
-          href: 'https://github.com/tool3/reptile',
+          href: 'https://github.com/tool3/d.rex',
           label: 'GitHub',
           position: 'right',
         },
