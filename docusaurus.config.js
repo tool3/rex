@@ -1,3 +1,4 @@
+
 module.exports = {
   title: 'd.rex',
   tagline: 'Docusaurus based README docs generator',
@@ -23,8 +24,9 @@ module.exports = {
         // { to: 'blog', label: 'Blog', position: 'left' },
         {
           href: 'https://github.com/tool3/d.rex',
-          label: 'GitHub',
           position: 'right',
+          className: 'header-github-link',
+          'aria-label': 'GitHub repository',
         },
       ],
     },
