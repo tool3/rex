@@ -1,11 +1,10 @@
 module.exports = {
   "someSidebar": {
-    "Welcome": [
+    "About": [
       "doc1"
     ],
     "Getting Started": [
-      "doc2",
-      "doc3"
+      "doc2"
     ]
   }
 }

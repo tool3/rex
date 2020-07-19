@@ -19,7 +19,7 @@ const readHim = async () => {
     const data = await read('./README.md');
     const readme = data.toString();
     const lines = readme.split("<!--{");
-    let counter = 2;
+    let counter = 1;
     const categories = {};
     lines.forEach(async line => {
         line = line.split('}-->');
@@ -35,7 +35,7 @@ const readHim = async () => {
                 categories[json.category].push(name);
             }
 
-            const data = `---\ntitle: ${title} \n--- ${line[1]} `;
+            const data = `---\ntitle: ${title} \n--- ${line[1]} `.replace(`# ${title}`, '');
             fs.writeFileSync(`./docs/${nameWithExtension}`, data);
             counter++;
         }
