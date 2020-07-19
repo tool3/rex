@@ -29,7 +29,20 @@ The steps performed in `create.js` include:
 - map category to documents.
 - update `sidebars.js` with the doc to category mapping.
 
+<!--
 :::danger
-Running `create.js` will replace all of the content in the `docs/` directory,  
+Running `create.js` will replace all of the content in the `docs/` directory,
 as well as blindly override the `sidebars.js` file.
 :::
+
+-->
+
+<!--{ "title": "Post Actions", "category": "Getting Started" }-->
+
+# Post Actions
+
+after running the `create.js` file, new docs will now be located under the `docs` directory.  
+here are some steps to consider after running `create`:
+
+- update logos and title in `docusaurus.config.js` file
+- update the `homePageId` in `docusaurus.config.js` under `plugins -> @docusaurus/preset-classic -> docs`;

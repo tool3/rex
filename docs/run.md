@@ -17,8 +17,12 @@ The steps performed in `create.js` include:
 - map category to documents.
 - update `sidebars.js` with the doc to category mapping.
 
+<!--
 :::danger
-Running `create.js` will replace all of the content in the `docs/` directory,  
+Running `create.js` will replace all of the content in the `docs/` directory,
 as well as blindly override the `sidebars.js` file.
 :::
+
+-->
+
  

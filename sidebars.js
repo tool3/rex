@@ -4,7 +4,8 @@ module.exports = {
       "welcome"
     ],
     "Getting Started": [
-      "run"
+      "run",
+      "post_actions"
     ]
   }
 }
