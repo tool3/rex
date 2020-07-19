@@ -2,20 +2,16 @@
 title: Welcome 
 --- 
 
-# chartscii
+# d.rex
 
-[![Build Status](https://travis-ci.org/tool3/chartscii.svg?branch=master)](https://travis-ci.org/tool3/chartscii) ![lint](https://github.com/tool3/chartscii/workflows/lint/badge.svg)  
-simple ascii bar charts
+docusaurus based README docs generator.  
+seperate your readme to different pages using `<!-- {json metadata} -->`.  
+see this README in edit mode.
 
-<img width="1000" src="https://tool3.github.io/chartscii/img/example.svg" />
+# use JSON
 
-- command line usage see: [chartscii-cli](https://github.com/tool3/chartscii-cli)
-- typescript usage [typescript](#typescript-usage-example)
-
-# install
-
-```bash
-npm install chartscii
-```
+use HTML comments with json to structure your doces.  
+For example:
+`<!-- { "title": "d.rex", "category": "About" } -->` will generate a doc with title d.rex and a new sidebar dropdown will be created with the name About.
 
  

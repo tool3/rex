@@ -6,7 +6,7 @@ const read = promisify(fs.readFile);
 
 const injectSideBars = async (categories) => {
     Object.keys(categories).forEach(category => {
-        sidebars.someSidebar[category] = categories[category];
+        sidebars.sideBar[category] = categories[category];
     });
 
     const string = `module.exports = ${JSON.stringify(sidebars, null, 2)}`
