@@ -1,5 +1,11 @@
 module.exports = {
-  someSidebar: {
-    Start: ['doc1','doc2','doc3']
-  },
-};
+  "someSidebar": {
+    "Welcome": [
+      "doc1"
+    ],
+    "Getting Started": [
+      "doc2",
+      "doc3"
+    ]
+  }
+}

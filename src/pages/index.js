@@ -22,7 +22,7 @@ const features = [
     imageUrl: 'img/undraw_moonlight_5ksn.svg',
     description: (
       <>
-        Seperate pages by <code>---</code> and reptile will take care of the rest.
+        Seperate pages by HTML comments supplying metadata that will be used to structure your docs.
       </>
     ),
   },
@@ -31,8 +31,7 @@ const features = [
     imageUrl: 'img/undraw_To_the_stars_qhyy.svg',
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Extend or customize your website layout by reusing React.
       </>
     ),
   },

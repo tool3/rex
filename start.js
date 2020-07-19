@@ -4,35 +4,44 @@ const sidebars = require('./sidebars');
 const read = promisify(fs.readFile);
 
 
-const injectSideBars = async (names) => {
-    const content = [...sidebars.someSidebar.Start, ...names];
-    const side = await read('./sidebars.js');
-    const sideBar = side.toString().replace("Start: ['doc1']", `Start: [${content.map(name => `'${name.replace('.md', '')}'`)}]`);
+const injectSideBars = async (categories) => {
+    Object.keys(categories).forEach(category => {
+        sidebars.someSidebar[category] = categories[category];
+    });
 
-    if (names.length > 0) {
-        fs.writeFileSync('./sidebars.js', sideBar);
+    const string = `module.exports = ${JSON.stringify(sidebars, null, 2)}`
+    if (categories) {
+        fs.writeFileSync('./sidebars.js', string);
     }
 }
 
 const readHim = async () => {
     const data = await read('./README.md');
     const readme = data.toString();
-    const lines = readme.split("---");
+    const lines = readme.split("<!--{");
     let counter = 2;
-    const names = [];
+    const categories = {};
     lines.forEach(async line => {
-        const name = `doc${counter}.md`;
-        const title = line.split('# ')[1].split('\n')[0];
-        line = line.replace(`# ${title}`, '');
-        const data = `---\ntitle: ${title}\n---\n ${line}`;
+        line = line.split('}-->');
+        if (line[0].length > 0) {
+            const json = JSON.parse(`{ ${line[0]} } `);
+            const title = json.title;
+            const name = `doc${counter}`;
+            const nameWithExtension = `doc${counter}.md`;
 
-        fs.writeFileSync(`./docs/${name}`, data);
-        names.push(name);
-        counter++;
+            if (!categories[json.category]) {
+                categories[json.category] = [name];
+            } else {
+                categories[json.category].push(name);
+            }
+
+            const data = `---\ntitle: ${title} \n--- ${line[1]} `;
+            fs.writeFileSync(`./docs/${nameWithExtension}`, data);
+            counter++;
+        }
     });
 
-
-    await injectSideBars(names);
+    await injectSideBars(categories);
 
 }
 
