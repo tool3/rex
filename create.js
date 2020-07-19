@@ -26,8 +26,8 @@ const readHim = async () => {
         if (line[0].length > 0) {
             const json = JSON.parse(`{ ${line[0]} } `);
             const title = json.title;
-            const name = `doc${counter}`;
-            const nameWithExtension = `doc${counter}.md`;
+            const name = `${title.replace(' ', '_').toLowerCase()}`;
+            const nameWithExtension = `${title.replace(' ', '_').toLowerCase()}.md`;
 
             if (!categories[json.category]) {
                 categories[json.category] = [name];

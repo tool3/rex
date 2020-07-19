@@ -1,10 +1,20 @@
 module.exports = {
   "someSidebar": {
-    "About": [
-      "doc1"
+    "Install": [
+      "welcome"
     ],
-    "Getting Started": [
-      "doc2"
+    "Usage": [
+      "usage"
+    ],
+    "Options": [
+      "options"
+    ],
+    "Examples": [
+      "intro",
+      "conditional_colors",
+      "fancy",
+      "percentage",
+      "wakatime"
     ]
   }
 }
