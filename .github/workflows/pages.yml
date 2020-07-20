@@ -19,8 +19,6 @@ jobs:
           npm ci
           node create.js
           npm run build
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: deploy
         uses: peaceiris/actions-gh-pages@v3
