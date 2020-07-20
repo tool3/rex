@@ -3,7 +3,7 @@ module.exports = {
   title: 'rex',
   tagline: 'Docusaurus based README docs generator',
   url: 'https://tool3.github.io/',
-  baseUrl: '/',
+  baseUrl: '/rex',
   projectName: 'rex',
   organizationName: 'tool3',
   favicon: 'img/favicon.ico',
