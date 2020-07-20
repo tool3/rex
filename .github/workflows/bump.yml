@@ -1,6 +1,9 @@
 name: docs
 
-on: [push]
+on:
+  push:
+    branches:
+      - gh-pages
 
 jobs:
   build-and-deploy:
@@ -21,5 +24,5 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@3.5.7
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH: master
+          BRANCH: gh-pages
           FOLDER: build
