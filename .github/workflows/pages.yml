@@ -6,7 +6,7 @@ on:
       - master
 
 jobs:
-  build-and-deploy:
+  deploy_docs:
     runs-on: ubuntu-latest
     steps:
       - name: checkout
@@ -16,10 +16,14 @@ jobs:
 
       - name: build
         run: |
-          git config user.email "talhayut.dev@gmail.com"
-          git config user.name "Tal Hayut"
           npm ci
           node create.js
-          npm run deploy
+          npm run build
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
