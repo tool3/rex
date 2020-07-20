@@ -19,3 +19,5 @@ jobs:
           npm ci
           node create.js
           npm run deploy
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
