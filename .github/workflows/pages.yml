@@ -16,6 +16,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: build
         run: |
+          git config --global user.email "talhayut.dev@gmail.com"
+          git config --global user.name "Tal Hayut"
           npm ci
           node create.js
           npm run deploy
