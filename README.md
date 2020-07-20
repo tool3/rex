@@ -1,6 +1,6 @@
 <!--{ "title": "Welcome", "category": "About" }-->
 
-# d.rex
+# rex
 
 docusaurus based README docs generator.  
 seperate your readme to different pages using `<!-- {json metadata} -->`.  
@@ -10,13 +10,13 @@ see this README in edit mode.
 
 use HTML comments with json to structure your doces.  
 For example:
-`<!-- { "title": "d.rex", "category": "About" } -->` will generate a doc with title d.rex and a new sidebar dropdown will be created with the name About.
+`<!-- { "title": "rex", "category": "About" } -->` will generate a doc with title rex and a new sidebar dropdown will be created with the name About.
 
 <!--{ "title": "Run", "category": "Getting Started" }-->
 
 # Getting started
 
-The easiest way to get started with `d.rex` is to clone the repo, and copy your README file to the root directory.
+The easiest way to get started with `rex` is to clone the repo, and copy your README file to the root directory.
 Once done, run the `create.js` file:
 
 ```bash

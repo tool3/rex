@@ -1,8 +1,8 @@
 {
-  "name": "d.rex",
+  "name": "rex",
   "description": "create docs site from README file",
   "repository": {
-    "url": "https://github.com/tool3/d.rex",
+    "url": "https://github.com/tool3/rex",
     "type": "git"
   },
   "version": "1.0.0",

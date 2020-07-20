@@ -1,10 +1,10 @@
 ---
-title: Run 
---- 
+title: Run
+---
 
 # Getting started
 
-The easiest way to get started with `d.rex` is to clone the repo, and copy your README file to the root directory.
+The easiest way to get started with `rex` is to clone the repo, and copy your README file to the root directory.
 Once done, run the `create.js` file:
 
 ```bash
@@ -24,5 +24,3 @@ as well as blindly override the `sidebars.js` file.
 :::
 
 -->
-
- 
