@@ -16,6 +16,8 @@ jobs:
 
       - name: build
         run: |
+          git config user.email "talhayut.dev@gmail.com"
+          git config user.name "Tal Hayut"
           npm ci
           node create.js
           npm run deploy
