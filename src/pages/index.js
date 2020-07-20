@@ -9,17 +9,8 @@ import Logo from '../../static/img/logo.black.svg';
 
 const features = [
   {
-    title: <>Simple</>,
-    imageUrl: 'img/undraw_hologram_fjwp.svg',
-    description: (
-      <>
-        With a single <code>.js</code> script, turn your README into beautiful docs site.
-      </>
-    ),
-  },
-  {
-    title: <>Easy</>,
-    imageUrl: 'img/undraw_moonlight_5ksn.svg',
+    title: <><b>R</b>eliable</>,
+    imageUrl: 'img/undraw_launch_day_4e04.svg',
     description: (
       <>
         Seperate pages by HTML comments supplying metadata that will be used to structure your docs.
@@ -27,7 +18,16 @@ const features = [
     ),
   },
   {
-    title: <>Powerful</>,
+    title: <><b>E</b>asy</>,
+    imageUrl: 'img/undraw_Taken_if77.svg',
+    description: (
+      <>
+        With a single <code>.js</code> script, turn your README into beautiful docs site.
+      </>
+    ),
+  },
+  {
+    title: <><b>X</b>tendable</>,
     imageUrl: 'img/undraw_To_the_stars_qhyy.svg',
     description: (
       <>
