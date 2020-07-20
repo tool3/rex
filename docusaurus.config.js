@@ -3,10 +3,10 @@ module.exports = {
   title: 'rex',
   tagline: 'Docusaurus based README docs generator',
   url: 'https://tool3.github.io/',
-  baseUrl: '/rex/',
-  favicon: 'img/favicon.ico',
-  organizationName: 'tool3',
+  baseUrl: '/',
   projectName: 'rex',
+  organizationName: 'tool3',
+  favicon: 'img/favicon.ico',
   themeConfig: {
     navbar: {
       title: 'rex',
