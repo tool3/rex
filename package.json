@@ -1,6 +1,7 @@
 {
   "name": "rex",
   "description": "create docs site from README file",
+  "homepage": "https://tool3.github.io/rex/",
   "repository": {
     "url": "https://github.com/tool3/rex",
     "type": "git"
