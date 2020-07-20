@@ -45,12 +45,12 @@
   height: 2em;
 }
 
-.moon_node_modules-\@docusaurus-theme-classic-src-theme-Toggle-::before {
+.moon_node_modules-\@docusaurus-theme-classic-src-theme-Toggle-:before {
   width: 1em;
   content: url("https://upload.wikimedia.org/wikipedia/commons/e/ee/Weather_icon_-_full_moon.svg") !important;
 }
 
-.sun_node_modules-\@docusaurus-theme-classic-src-theme-Toggle-::before {
+.sun_node_modules-\@docusaurus-theme-classic-src-theme-Toggle-:before {
   width: 1em;
   content: url("https://image.flaticon.com/icons/svg/169/169367.svg") !important;
 }
