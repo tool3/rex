@@ -15,9 +15,9 @@ jobs:
           persist-credentials: false
 
       - name: build
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           npm ci
           node create.js
           npm run deploy
-        with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
