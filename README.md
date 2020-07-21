@@ -2,6 +2,8 @@
 
 # rex
 
+[![](https://img.shields.io/static/v1?label=created%20with%20rex&message=%F0%9F%A6%96&color=green)](https://tool3.github.io/rex)
+
 docusaurus based README docs generator.  
 seperate your readme to different pages using `<!-- {json metadata} -->`.  
 see this README in edit mode.

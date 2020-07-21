@@ -37,15 +37,18 @@ module.exports = {
           title: 'Social',
           items: [
             {
-              label: 'LinkedIn',
+              label: '',
+              className: "linkedIn",
               href: 'https://linkedin.com/in/talhayut',
             },
             {
-              label: 'Github',
+              label: '',
+              className: "github",
               href: 'https://github.com/tool3',
             },
             {
-              label: 'npm',
+              label: '',
+              className: "npm",
               href: 'https://npmjs.com/tool3',
             },
           ],
