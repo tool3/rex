@@ -11,7 +11,7 @@ module.exports = {
     navbar: {
       title: 'rex',
       logo: {
-        alt: 'd.re logo',
+        alt: 'rex logo',
         src: 'img/logo.svg',
       },
       links: [
@@ -21,7 +21,6 @@ module.exports = {
           label: 'Docs',
           position: 'left',
         },
-        // { to: 'blog', label: 'Blog', position: 'left' },
         {
           href: 'https://github.com/tool3/rex',
           position: 'right',
@@ -34,7 +33,7 @@ module.exports = {
       style: 'dark',
       links: [
         {
-          title: 'Social',
+          title: '',
           items: [
             {
               label: '',
@@ -51,6 +50,11 @@ module.exports = {
               className: "npm",
               href: 'https://npmjs.com/tool3',
             },
+            {
+              label: '',
+              className: "rex_badge",
+              href: 'https://npmjs.com/tool3',
+            },
           ],
         },
       ],
@@ -62,7 +66,6 @@ module.exports = {
       '@docusaurus/preset-classic',
       {
         docs: {
-          // It is recommended to set document id as docs home page (`docs/` path).
           homePageId: 'welcome',
           sidebarPath: require.resolve('./sidebars.js')
         },
