@@ -58,7 +58,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Tal Hayut`,
+      copyright: `Tal Hayut © ${new Date().getFullYear()}`,
     },
   },
   presets: [
