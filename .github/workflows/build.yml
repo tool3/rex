@@ -1,4 +1,4 @@
-name: docs
+name: build
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - master
 
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: checkout
@@ -17,12 +17,4 @@ jobs:
       - name: build
         run: |
           npm ci
-          node create.js
           npm run build
-
-      - name: deploy
-        uses: JamesIves/github-pages-deploy-action@3.5.7
-        with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH: gh-pages
-          FOLDER: build
