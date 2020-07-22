@@ -48,13 +48,8 @@ module.exports = {
             {
               label: '',
               className: "npm",
-              href: 'https://npmjs.com/tool3',
-            },
-            {
-              label: '',
-              className: "rex_badge",
-              href: 'https://npmjs.com/tool3',
-            },
+              href: 'https://npmjs.com/~tool3',
+            }
           ],
         },
       ],
