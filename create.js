@@ -1,18 +1,31 @@
 const fs = require('fs');
 const { promisify } = require('util');
 const sidebars = require('./sidebars');
+const config = require('./docusaurus.config');
 const read = promisify(fs.readFile);
 
+const wrapInExport = data => {
+    return `module.exports = ${JSON.stringify(data, null, 2)}`
+}
 
 const injectSideBars = async (categories) => {
+    sidebars.sideBar = {};
     Object.keys(categories).forEach(category => {
         sidebars.sideBar[category] = categories[category];
     });
 
-    const string = `module.exports = ${JSON.stringify(sidebars, null, 2)}`
+    const string = wrapInExport(sidebars);
     if (categories) {
         fs.writeFileSync('./sidebars.js', string);
     }
+}
+
+
+const writeConfig = async (main) => {
+    const configFile = './docusaurus.config.js';
+    config.presets[0][1].docs.homePageId = main;
+    const string = wrapInExport(config);
+    fs.writeFileSync(configFile, string);
 }
 
 const readHim = async () => {
@@ -20,6 +33,7 @@ const readHim = async () => {
     const readme = data.toString();
     const lines = readme.split("<!--{");
     let counter = 1;
+    let main = '';
     const categories = {};
     lines.forEach(async line => {
         line = line.split('}-->');
@@ -35,6 +49,10 @@ const readHim = async () => {
                 categories[json.category].push(name);
             }
 
+            if (json.main) {
+                main = name;
+            }
+
             const data = `---\ntitle: ${title} \n--- ${line[1]} `.replace(`# ${title}`, '');
             fs.writeFileSync(`./docs/${nameWithExtension}`, data);
             counter++;
@@ -42,7 +60,7 @@ const readHim = async () => {
     });
 
     await injectSideBars(categories);
-
+    await writeConfig(main);
 }
 
 readHim();
