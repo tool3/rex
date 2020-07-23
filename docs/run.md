@@ -4,11 +4,11 @@ title: Run
 
 
 
-The easiest way to get started with `rex` is to clone the repo, and copy your README file to the root directory.
+The easiest way to get started with `rex` is to clone the repo, and copy your `README` file to the root directory.
 Once done, run the `create.js` file:
 
 ```bash
-node create.js
+npm run create
 ```
 
 The steps performed in `create.js` include:

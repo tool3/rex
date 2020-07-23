@@ -59,7 +59,6 @@ const readHim = async () => {
 
             const data = `---\ntitle: ${title} \n--- ${line[1]} `.replace(`# ${title}`, '');
             fs.writeFileSync(`./docs/${nameWithExtension}`, data);
-            counter++;
         }
     });
 
