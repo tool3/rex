@@ -2,6 +2,8 @@
 title: Options 
 --- 
 
+
+
 the options you can supply `rex` are as follows:
 
 ### title

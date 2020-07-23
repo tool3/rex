@@ -17,7 +17,6 @@ const injectSideBars = async (categories) => {
         }
         sidebars.docs.push({ type: 'category', label: category, items: categories[category] });
     });
-
     const string = wrapInExport(sidebars);
     if (categories) {
         fs.writeFileSync('./sidebars.js', string);
@@ -27,7 +26,10 @@ const injectSideBars = async (categories) => {
 
 const writeConfig = async (main) => {
     const configFile = './docusaurus.config.js';
-    config.presets[0][1].docs.homePageId = main;
+    const path = config.presets[0][1];
+    path.docs.homePageId = main;
+    path.docs.sidebarPath = require.resolve('./sidebars.js');
+    path.theme.customCss = require.resolve('./src/css/custom.css')
     const string = wrapInExport(config);
     fs.writeFileSync(configFile, string);
 }
