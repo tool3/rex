@@ -1,4 +1,4 @@
-<!--{ "title": "Welcome", "main": true}-->
+<!--{"title": "Welcome", "main": true}-->
 
 # rex
 
@@ -14,7 +14,7 @@ use HTML comments with json to structure your doces.
 For example:
 `<!-- { "title": "rex", "category": "About", "main": true } -->` will generate a doc with title rex and a new sidebar dropdown will be created with the name About.
 
-<!--{ "title": "Run", "category": "Getting Started" }-->
+<!--{"title": "Run", "category": "Getting Started"}-->
 
 # Run
 
@@ -40,7 +40,7 @@ as well as blindly override the `sidebars.js` file.
 
 -->
 
-<!--{ "title": "Post Actions", "category": "Getting Started" }-->
+<!--{"title": "Post Actions", "category": "Getting Started"}-->
 
 # Post Actions
 
@@ -50,7 +50,7 @@ here are some steps to consider after running `create`:
 - update logos and title in `docusaurus.config.js` file
 - update the `homePageId` in `docusaurus.config.js` under `plugins -> @docusaurus/preset-classic -> docs`;
 
-<!--{ "title": "Options", "category": "Getting Started" }-->
+<!--{"title": "Options", "category": "Getting Started"}-->
 
 # Options
 

@@ -12,7 +12,7 @@ const injectSideBars = async (categories) => {
     sidebars.docs = [];
     Object.keys(categories).forEach(category => {
         if (category === "None") {
-            sidebars.docs.unshift({ id: categories[category][0], type: 'doc' });
+            categories[category].reverse().forEach(category => sidebars.docs.unshift({ id: category, type: 'doc' }));
             return;
         }
         sidebars.docs.push({ type: 'category', label: category, items: categories[category] });
@@ -48,14 +48,14 @@ const readHim = async () => {
             const title = json.title;
             const name = `${title.replace(' ', '_').toLowerCase()}`;
             const nameWithExtension = `${title.replace(' ', '_').toLowerCase()}.md`;
-
-            if (!categories[json.category]) {
-                categories[json.category || 'None'] = [name];
+            const category = json.category || 'None';
+            if (!categories[category]) {
+                categories[category || 'None'] = [name];
                 if (!main || json.main) {
                     main = name
                 }
             } else {
-                categories[json.category].push(name);
+                categories[category].push(name);
             }
 
             const data = `---\ntitle: ${title} \n--- ${line[1]} `.replace(`# ${title}`, '');
