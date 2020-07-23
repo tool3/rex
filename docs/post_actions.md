@@ -9,4 +9,5 @@ here are some steps to consider after running `create`:
 
 - update logos and title in `docusaurus.config.js` file
 - update the `homePageId` in `docusaurus.config.js` under `plugins -> @docusaurus/preset-classic -> docs`;
+
  

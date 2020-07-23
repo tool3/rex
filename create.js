@@ -9,9 +9,13 @@ const wrapInExport = data => {
 }
 
 const injectSideBars = async (categories) => {
-    sidebars.sideBar = {};
+    sidebars.docs = [];
     Object.keys(categories).forEach(category => {
-        sidebars.sideBar[category] = categories[category];
+        if (category === "None") {
+            sidebars.docs.unshift({ id: categories[category][0], type: 'doc' });
+            return;
+        }
+        sidebars.docs.push({ type: 'category', label: category, items: categories[category] });
     });
 
     const string = wrapInExport(sidebars);
@@ -44,7 +48,7 @@ const readHim = async () => {
             const nameWithExtension = `${title.replace(' ', '_').toLowerCase()}.md`;
 
             if (!categories[json.category]) {
-                categories[json.category] = [name];
+                categories[json.category || 'None'] = [name];
                 if (!main || json.main) {
                     main = name
                 }

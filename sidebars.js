@@ -1,11 +1,17 @@
 module.exports = {
-  "sideBar": {
-    "About": [
-      "welcome"
-    ],
-    "Getting Started": [
-      "run",
-      "post_actions"
-    ]
-  }
+  "docs": [
+    {
+      "id": "welcome",
+      "type": "doc"
+    },
+    {
+      "type": "category",
+      "label": "Getting Started",
+      "items": [
+        "run",
+        "post_actions",
+        "options"
+      ]
+    }
+  ]
 }
