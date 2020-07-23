@@ -17,4 +17,5 @@ jobs:
       - name: build
         run: |
           npm ci
+          export NODE_ENV=dev
           npm run build
