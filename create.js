@@ -38,7 +38,6 @@ const readHim = async () => {
     const data = await read('./README.md');
     const readme = data.toString();
     const lines = readme.split("<!--{");
-    let counter = 1;
     let main = null;
     const categories = {};
     lines.forEach(async line => {
