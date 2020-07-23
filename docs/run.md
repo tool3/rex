@@ -16,6 +16,7 @@ The steps performed in `create.js` include:
 - create documents in the `docs/` directory from your README.
 - map category to documents.
 - update `sidebars.js` with the doc to category mapping.
+- update `docusaurus.config.js` with the main docs page property.
 
 <!--
 :::danger

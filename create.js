@@ -33,7 +33,7 @@ const readHim = async () => {
     const readme = data.toString();
     const lines = readme.split("<!--{");
     let counter = 1;
-    let main = '';
+    let main = null;
     const categories = {};
     lines.forEach(async line => {
         line = line.split('}-->');
@@ -45,12 +45,11 @@ const readHim = async () => {
 
             if (!categories[json.category]) {
                 categories[json.category] = [name];
+                if (!main || json.main) {
+                    main = name
+                }
             } else {
                 categories[json.category].push(name);
-            }
-
-            if (json.main) {
-                main = name;
             }
 
             const data = `---\ntitle: ${title} \n--- ${line[1]} `.replace(`# ${title}`, '');

@@ -12,7 +12,7 @@ see this README in edit mode.
 
 use HTML comments with json to structure your doces.  
 For example:
-`<!-- { "title": "rex", "category": "About" } -->` will generate a doc with title rex and a new sidebar dropdown will be created with the name About.
+`<!-- { "title": "rex", "category": "About", "main": true } -->` will generate a doc with title rex and a new sidebar dropdown will be created with the name About.
 
 <!--{ "title": "Run", "category": "Getting Started" }-->
 
@@ -30,6 +30,7 @@ The steps performed in `create.js` include:
 - create documents in the `docs/` directory from your README.
 - map category to documents.
 - update `sidebars.js` with the doc to category mapping.
+- update `docusaurus.config.js` with the main docs page (defaults to the first page).
 
 <!--
 :::danger
