@@ -52,6 +52,8 @@ here are some steps to consider after running `create`:
 
 <!--{ "title": "Options", "category": "Getting Started" }-->
 
+# Options
+
 the options you can supply `rex` are as follows:
 
 ### title
