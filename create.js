@@ -34,7 +34,7 @@ const writeConfig = async (main) => {
     fs.writeFileSync(configFile, string);
 }
 
-const noHands = lines => {
+const noHands = (lines, readme) => {
     if (lines.length === 1) {
         // no formatting was added
         const regex = new RegExp(/^\s*# /, 'gm');
@@ -58,7 +58,7 @@ const readHim = async () => {
     const data = await read('./README.md');
     const readme = data.toString();
     let lines = readme.split("<!--{");
-    lines = noHands(lines);
+    lines = noHands(lines, readme);
 
     let main = null;
     const categories = {};
