@@ -10,6 +10,11 @@ docusaurus based README docs generator.
 seperate your readme to different pages using `<!-- {json metadata} -->`.  
 see this README in edit mode.
 
+# no hands mode
+
+rex can create the doc site without any manual editing of the `README` file.  
+it defaults to a page per main header (e.g 1 `#`).
+
 # use JSON
 
 use HTML comments with json to structure your doces.  

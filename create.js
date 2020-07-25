@@ -34,12 +34,35 @@ const writeConfig = async (main) => {
     fs.writeFileSync(configFile, string);
 }
 
+const noHands = lines => {
+    if (lines.length === 1) {
+        // no formatting was added
+        const regex = new RegExp(/^\s*# /, 'gm');
+        lines = readme.split(regex);
+
+        return lines.map(line => {
+            if (line) {
+                const title = line.substring(0, line.indexOf('\n'));
+                line = line.replace(`${title}`, '');
+                return `"title": "${title}"}-->\n${line}`
+            } else {
+                return '';
+            }
+        });
+    } else {
+        return lines;
+    }
+}
+
 const readHim = async () => {
     const data = await read('./README.md');
     const readme = data.toString();
-    const lines = readme.split("<!--{");
+    let lines = readme.split("<!--{");
+    lines = noHands(lines);
+
     let main = null;
     const categories = {};
+
     lines.forEach(async line => {
         line = line.split('}-->');
         if (line[0].length > 0) {
@@ -48,6 +71,7 @@ const readHim = async () => {
             const name = `${title.replace(' ', '_').toLowerCase()}`;
             const nameWithExtension = `${title.replace(' ', '_').toLowerCase()}.md`;
             const category = json.category || 'None';
+
             if (!categories[category]) {
                 categories[category || 'None'] = [name];
                 if (!main || json.main) {
