@@ -8,7 +8,7 @@ title: Welcome
 
 docusaurus based README docs generator.  
 seperate your readme to different pages using `<!-- {json metadata} -->`.  
-see this README in edit mode.
+see this README in [edit](https://github.com/tool3/rex/edit/master/README.md) mode.
 
 # no hands mode
 

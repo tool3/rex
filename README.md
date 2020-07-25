@@ -55,8 +55,8 @@ after running the `create.js` file, new docs will now be located under the `docs
 here are some steps to consider after running `create`:
 
 - update logos and title in `docusaurus.config.js` file
-- update the `homePageId` in `docusaurus.config.js` under `plugins -> @docusaurus/preset-classic -> docs`;
-
+- update theme color `--ifm-color-primary` in `./src/css/custom.css`
+- add a rex badge to show your support: `[![](https://img.shields.io/static/v1?label=created%20with%20rex&message=%F0%9F%A6%96&color=1e1e1e)](https://tool3.github.io/rex)`
 <!--{"title": "Options", "category": "Getting Started"}-->
 
 # Options
