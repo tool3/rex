@@ -23,8 +23,15 @@ const injectSideBars = async (categories) => {
     }
 }
 
+const getConfig = () => {
+    const exists = fs.existsSync('./rex.config.js');
+    if (exists) {
+        return require('./rex.config');
+    }
+}
 
-const writeConfig = async (main) => {
+
+const writeDocusaurusConfig = async (main) => {
     const configFile = './docusaurus.config.js';
     const path = config.presets[0][1];
     path.docs.homePageId = main;
@@ -54,7 +61,10 @@ const noHands = (lines, readme) => {
     }
 }
 
+
+
 const readHim = async () => {
+    const rexCofig = getConfig();
     const data = await read('./README.md');
     const readme = data.toString();
     let lines = readme.split("<!--{");
@@ -87,7 +97,17 @@ const readHim = async () => {
     });
 
     await injectSideBars(categories);
-    await writeConfig(main);
+    await writeDocusaurusConfig(main);
+
+    if (process.argv[2] === "--theme" && process.argv[3]) {
+        const cssPath = './src/css/custom.css';
+        const hex = '32b824';
+        const css = await read(cssPath);
+        const theme = process.argv[3].replace('#', '');
+        const regex = new RegExp(hex, 'gi');
+        const newCss = css.toString().replace(regex, theme);
+        fs.writeFileSync(cssPath, newCss);
+    }
 }
 
 readHim();
