@@ -5,10 +5,6 @@ module.exports = {
       "type": "doc"
     },
     {
-      "id": "usage",
-      "type": "doc"
-    },
-    {
       "id": "data",
       "type": "doc"
     },
