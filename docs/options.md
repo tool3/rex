@@ -21,33 +21,33 @@ title: options
 ### `theme`
 **type**: `object`   
 **description**: optional theme style
- #### `background`
+- #### `background`
   **type**: `string`   
   **description**: css color for terminal background   
   **default**: `{ background: '#151515' }`
- #### `forground`
+- #### `forground`
   **type**: `string`   
   **description**: css color for any unformatted string provided in `data`
 ### `style`
   **type**: `object`   
   **description**: css properties for terminal output
- #### `fontSize`
- **type**: `number`   
- **description**: font size
- #### `fontWeight`
- **type**: `string`   
- **description**: font weight
- #### `fontFamily`
+- #### `fontSize`
+  **type**: `number`   
+  **description**: font size
+- #### `fontWeight`
+  **type**: `string`   
+  **description**: font weight
+- #### `fontFamily`
   **type**: `string`   
   **description**: font family
 ### `viewport`
 **type**: `object`   
 **description**: viewport of terminal   
 **default**: `{ width: 700, height: 600 }`
- #### `width`
- **type**: `number`   
- **description**: viewport width
- #### `height`
+- #### `width`
+  **type**: `number`   
+  **description**: viewport width
+- #### `height`
   **type**: `number`   
   **description**: viewport height
  
