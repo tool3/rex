@@ -14,7 +14,7 @@ const features = [
     description: (
       <>
         the shellfie js library<br/>
-        <a href="https://github.com/tool3/shellfie">shellfie</a>
+        <a href="https://github.com/tool3/shellfie" target="_blank">shellfie</a>
       </>
     ),
   },
@@ -24,7 +24,7 @@ const features = [
     description: (
       <>
         shellfie as a service<br/>
-        <a href="https://shellfie.herokuapp.com">shellfied</a>
+        <a href="https://shellfie.herokuapp.com" target="_blank">shellfied</a>
       </>
     ),
   },
@@ -34,7 +34,7 @@ const features = [
     description: (
       <>
         use the power of shellfie in your terminal<br/>
-        <a href="https://github.com/tool3/shellfie-cli">shellfie-cli</a>
+        <a href="https://github.com/tool3/shellfie-cli" target="_blank">shellfie-cli</a>
       </>
     ),
   },
