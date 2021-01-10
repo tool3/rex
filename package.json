@@ -9,7 +9,7 @@
   "version": "1.0.0",
   "scripts": {
     "start": "docusaurus start",
-    "create": "node create.js",
+    "create": "node create.js && npm run build",
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "GIT_USER=tool3 docusaurus deploy"
