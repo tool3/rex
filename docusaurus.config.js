@@ -1,7 +1,7 @@
 module.exports = {
   "title": "REX",
   "tagline": "Docusaurus based README docs generator",
-  "url": "https://tool3.github.io/",
+  "url": "https://drex.netlify.app",
   "baseUrl": "/",
   "projectName": "rex",
   "organizationName": "tool3",

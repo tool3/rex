@@ -2,7 +2,7 @@
 
 # rex
 
-[![build](https://github.com/tool3/rex/workflows/build/badge.svg?branch=master)](https://github.com/tool3/rex/actions?query=workflow%3Abuild) [![](https://img.shields.io/static/v1?label=created%20with%20rex&message=%F0%9F%A6%96&color=1e1e1e)](https://tool3.github.io/rex)
+[![build](https://github.com/tool3/rex/workflows/build/badge.svg?branch=master)](https://github.com/tool3/rex/actions?query=workflow%3Abuild) [![](https://img.shields.io/static/v1?label=created%20with%20rex&message=%F0%9F%A6%96&color=1e1e1e)](https://drex.netlify.app)
 
 docusaurus based README docs generator.  
 seperate your readme to different pages using `<!-- {json metadata} -->`.  
@@ -57,7 +57,7 @@ here are some steps to consider after running `create`:
 
 - update logos and title in `docusaurus.config.js` file
 - update theme color `--ifm-color-primary` in `./src/css/custom.css`
-- add a rex badge to show your support: `[![](https://img.shields.io/static/v1?label=created%20with%20rex&message=%F0%9F%A6%96&color=1e1e1e)](https://tool3.github.io/rex)`
+- add a rex badge to show your support: `[![](https://img.shields.io/static/v1?label=created%20with%20rex&message=%F0%9F%A6%96&color=1e1e1e)](https://drex.netlify.app)`
 <!--{"title": "Options", "category": "Getting Started"}-->
 
 # Options
