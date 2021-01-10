@@ -2,7 +2,7 @@ module.exports = {
   "title": "REX",
   "tagline": "Docusaurus based README docs generator",
   "url": "https://tool3.github.io/",
-  "baseUrl": "/rex/",
+  "baseUrl": "/",
   "projectName": "rex",
   "organizationName": "tool3",
   "favicon": "img/favicon.ico",
@@ -13,7 +13,7 @@ module.exports = {
         "alt": "rex logo",
         "src": "img/logo.svg"
       },
-      "links": [
+      "items": [
         {
           "to": "docs/",
           "activeBasePath": "docs",
@@ -32,27 +32,27 @@ module.exports = {
       "style": "dark",
       "links": [
         {
-          "title": "",
+          "title": " ",
           "items": [
             {
-              "label": "",
+              "label": " ",
               "className": "linkedIn",
               "href": "https://linkedin.com/in/talhayut"
             },
             {
-              "label": "",
+              "label": " ",
               "className": "github",
               "href": "https://github.com/tool3"
             },
             {
-              "label": "",
+              "label": " ",
               "className": "npm",
               "href": "https://npmjs.com/~tool3"
             }
           ]
         }
       ],
-      "copyright": "Tal Hayut © 2020"
+      "copyright": "Tal Hayut © 2021"
     }
   },
   "presets": [
@@ -61,10 +61,10 @@ module.exports = {
       {
         "docs": {
           "homePageId": "welcome",
-          "sidebarPath": "/Users/tal.hayut/projects/rex/sidebars.js"
+          "sidebarPath": "/Users/talhayut/projects/rex/sidebars.js"
         },
         "theme": {
-          "customCss": "/Users/tal.hayut/projects/rex/src/css/custom.css"
+          "customCss": "/Users/talhayut/projects/rex/src/css/custom.css"
         }
       }
     ]
