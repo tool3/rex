@@ -1,7 +1,7 @@
 ---
 title: shellfie 🤳🏽
 --- 
-[![](https://img.shields.io/static/v1?label=created%20with%20rex&message=%F0%9F%A6%96&color=1e1e1e)](https://tool3.github.io/rex)    
+[![](https://img.shields.io/static/v1?label=created%20with%20rex&message=%F0%9F%A6%96&color=1e1e1e)](https://drex.netlify.app)    
 
 beautiful progremattic terminal screenshots
 # install
