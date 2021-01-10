@@ -1,17 +1,24 @@
 module.exports = {
   "docs": [
     {
-      "id": "welcome",
+      "id": "shellfie",
       "type": "doc"
     },
     {
-      "type": "category",
-      "label": "Getting Started",
-      "items": [
-        "run",
-        "post_actions",
-        "options"
-      ]
+      "id": "usage",
+      "type": "doc"
+    },
+    {
+      "id": "data",
+      "type": "doc"
+    },
+    {
+      "id": "options",
+      "type": "doc"
+    },
+    {
+      "id": "examples",
+      "type": "doc"
     }
   ]
 }

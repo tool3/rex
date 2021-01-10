@@ -1,17 +1,17 @@
 module.exports = {
-  "title": "REX",
-  "tagline": "Docusaurus based README docs generator",
-  "url": "https://drex.netlify.app",
+  "title": "shellfie",
+  "tagline": "create beautiful terminal screenshots from formatted string",
+  "url": "https://docshellfie.netlify.app",
   "baseUrl": "/",
-  "projectName": "rex",
+  "projectName": "shellfie",
   "organizationName": "tool3",
-  "favicon": "img/favicon.ico",
+  "favicon": "img/terminal.ico",
   "themeConfig": {
     "navbar": {
-      "title": "rex",
+      "title": "shellfie",
       "logo": {
-        "alt": "rex logo",
-        "src": "img/logo.svg"
+        "alt": "shellfie logo",
+        "src": "img/terminal.svg"
       },
       "items": [
         {
@@ -21,7 +21,7 @@ module.exports = {
           "position": "left"
         },
         {
-          "href": "https://github.com/tool3/rex",
+          "href": "https://github.com/tool3/shellfie",
           "position": "right",
           "className": "header-github-link",
           "aria-label": "GitHub repository"
@@ -60,7 +60,7 @@ module.exports = {
       "@docusaurus/preset-classic",
       {
         "docs": {
-          "homePageId": "welcome",
+          "homePageId": "shellfie",
           "sidebarPath": "/Users/talhayut/projects/rex/sidebars.js"
         },
         "theme": {
