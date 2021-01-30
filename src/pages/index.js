@@ -5,36 +5,34 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
-import Logo from '../../static/img/terminal.svg';
+import Logo from '../../static/img/restory_black.svg';
 
 const features = [
   {
-    title: 'shellfie',
+    title: 'standalone',
     imageUrl: 'img/undraw_launch_day_4e04.svg',
     description: (
       <>
-        the shellfie js library<br/>
-        <a href="https://github.com/tool3/shellfie" target="_blank">shellfie</a>
+        restory uses it's own dist of git-filter-repo.<br/>
+        therefore you do not need to have it in order to enjoy the benefits.
       </>
     ),
   },
   {
-    title: 'shellfied',
-    imageUrl: 'img/undraw_Taken_if77.svg',
+    title: 'simple api',
+    imageUrl: 'img/undraw_hologram_fjwp.svg',
     description: (
       <>
-        shellfie as a service<br/>
-        <a href="https://shellfie.herokuapp.com" target="_blank">shellfied</a>
+        restory provides a simple api abstraction to make rewriting history as simple as possible.
       </>
     ),
   },
   {
-    title: 'shellfie-cli',
+    title: 'super fast',
     imageUrl: 'img/undraw_To_the_stars_qhyy.svg',
     description: (
       <>
-        use the power of shellfie in your terminal<br/>
-        <a href="https://github.com/tool3/shellfie-cli" target="_blank">shellfie-cli</a>
+        git-filter-repo is extremely fast compared to git filter-branch.
       </>
     ),
   },

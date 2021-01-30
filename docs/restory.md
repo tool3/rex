@@ -1,7 +1,6 @@
 ---
-title: Welcome 
+title: restory 
 --- 
-# restory
 rewrite git history
 
 # install

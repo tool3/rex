@@ -1,17 +1,17 @@
 module.exports = {
-  "title": "shellfie",
+  "title": "restory",
   "tagline": "create beautiful terminal screenshots from formatted string",
-  "url": "https://docshellfie.netlify.app",
+  "url": "https://restory.netlify.app",
   "baseUrl": "/",
-  "projectName": "shellfie",
+  "projectName": "restory",
   "organizationName": "tool3",
-  "favicon": "img/terminal.ico",
+  "favicon": "img/restory.ico",
   "themeConfig": {
     "navbar": {
-      "title": "shellfie",
+      "title": "restory",
       "logo": {
-        "alt": "shellfie logo",
-        "src": "img/terminal.svg"
+        "alt": "restory logo",
+        "src": "img/restory.svg"
       },
       "items": [
         {
@@ -21,7 +21,7 @@ module.exports = {
           "position": "left"
         },
         {
-          "href": "https://github.com/tool3/shellfie",
+          "href": "https://github.com/tool3/restory",
           "position": "right",
           "className": "header-github-link",
           "aria-label": "GitHub repository"
@@ -60,7 +60,7 @@ module.exports = {
       "@docusaurus/preset-classic",
       {
         "docs": {
-          "homePageId": "shellfie",
+          "homePageId": "restory",
           "sidebarPath": "/Users/talhayut/projects/rex/sidebars.js"
         },
         "theme": {

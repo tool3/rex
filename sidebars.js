@@ -1,11 +1,11 @@
 module.exports = {
   "docs": [
     {
-      "id": "shellfie",
+      "id": "restory",
       "type": "doc"
     },
     {
-      "id": "data",
+      "id": "commands",
       "type": "doc"
     },
     {
@@ -13,7 +13,7 @@ module.exports = {
       "type": "doc"
     },
     {
-      "id": "examples",
+      "id": "important_usage notes",
       "type": "doc"
     }
   ]
