@@ -9,4 +9,5 @@ things to know:
 - you need to have a clean working directory.
 - you will have to force push.
 - when run without `--sha || -s` flag - the command will rewrite **ALL** commits with given input.
+
  

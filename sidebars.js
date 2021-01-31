@@ -5,7 +5,7 @@ module.exports = {
       "type": "doc"
     },
     {
-      "id": "commands",
+      "id": "api",
       "type": "doc"
     },
     {
@@ -14,6 +14,10 @@ module.exports = {
     },
     {
       "id": "important_usage notes",
+      "type": "doc"
+    },
+    {
+      "id": "examples",
       "type": "doc"
     }
   ]

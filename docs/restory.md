@@ -1,6 +1,7 @@
 ---
 title: restory 
 --- 
+
 rewrite git history
 
 # install
@@ -11,5 +12,4 @@ or
 ```bash
 npx @tool3/restory <cmd> [args] [options]
 ```
-
  
