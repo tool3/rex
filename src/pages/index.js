@@ -5,33 +5,40 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
-import Logo from '../../static/img/logo.black.svg';
+import Logo from '../../static/img/terminal.svg';
 
 const features = [
   {
-    title: <><b>R</b>eliable</>,
+    title: 'shellfie',
     imageUrl: 'img/undraw_launch_day_4e04.svg',
     description: (
       <>
-        Seperate pages by HTML comments supplying metadata that will be used to structure your docs.
+        the shellfie js library<br/>
+        <a href="https://github.com/tool3/shellfie">shellfie</a>
       </>
     ),
   },
   {
-    title: <><b>E</b>asy</>,
+    title: 'shellfied',
     imageUrl: 'img/undraw_Taken_if77.svg',
     description: (
       <>
-        With a single <code>.js</code> script, turn your README into beautiful docs site.
+        shellfie as a service<br/>
+        <a href="https://shellfie.herokuapp.com">shellfied</a>
       </>
     ),
   },
   {
-    title: <><b>X</b>tendable</>,
+    title: 'shellfie-cli',
     imageUrl: 'img/undraw_To_the_stars_qhyy.svg',
     description: (
       <>
+<<<<<<< HEAD
         Extend or customize your website layout using React.
+=======
+        use the power of shellfie in your terminal<br/>
+        <a href="https://github.com/tool3/shellfie-cli">shellfie-cli</a>
+>>>>>>> 1b4e816 (chore: align)
       </>
     ),
   },
