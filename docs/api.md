@@ -20,4 +20,8 @@ alias `re`
 rewrite commit|s message   
 alias `rm`   
 
- 
+## `rewrite`
+rewrite multiple commit fields   
+this command is a combination of all of the commands above, and is controlled with flags    
+see `restory rewrite --help`   
+alias `rm`

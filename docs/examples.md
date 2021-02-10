@@ -57,3 +57,17 @@ rewrite `Moon` to `Mun` in all commit messages
 restory remsg 'Moon' 'Mun'
 ```
  
+## `rewrite`
+rewrite commit message and replace date year `1987` to `1988` for the last 3 commits
+```bash
+restory rewrite -m 'this is the new commit msg' -d '1987' '1988' -n 3
+```
+rewrite `Moon` to `Mun` in all commit messages 
+```bash
+restory rewrite -m 'Moon' 'Mun'
+```
+
+rewrite commit message, replace `t` to `z` in author name and set email to `new_value@world.com` in a range of commits
+```bash
+restory rewrite -m 'new message' -a 't' 'z' -e 'new_value@world.com' -r '8381e6a' '4110655'
+```
