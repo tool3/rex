@@ -31,7 +31,7 @@ const features = [
     imageUrl: 'img/undraw_To_the_stars_qhyy.svg',
     description: (
       <>
-        Extend or customize your website layout by reusing React.
+        Extend or customize your website layout using React.
       </>
     ),
   },
