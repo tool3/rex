@@ -61,7 +61,6 @@ module.exports = {
       '@docusaurus/preset-classic',
       {
         docs: {
-          homePageId: 'welcome',
           sidebarPath: '/Users/talhayut/projects/rex/sidebars.js',
         },
         theme: {
