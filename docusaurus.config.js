@@ -21,6 +21,12 @@ module.exports = {
           position: 'left',
         },
         {
+          to: 'docs/examples/',
+          activeBasePath: 'docs/examples/',
+          label: 'Examples',
+          position: 'left',
+        },
+        {
           href: 'https://github.com/tool3/restory',
           position: 'right',
           className: 'header-github-link',

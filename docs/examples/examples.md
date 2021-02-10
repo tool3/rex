@@ -1,12 +1,13 @@
 ---
 title: examples 
+slug: /examples
 --- 
 ## `ls`
 list all commits
 ```bash
 restory ls
 ```
-![](./ls.png)
+<!-- ![](./ls.png) -->
 
 list last 5 commits
 ```bash

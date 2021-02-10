@@ -15,10 +15,12 @@ module.exports = {
     {
       "id": "important_usage notes",
       "type": "doc"
-    },
+    }
+  ],
+  "examples": [
     {
-      "id": "examples",
-      "type": "doc"
+        "id": "examples/examples",
+        "type": "doc"
     }
   ]
 }

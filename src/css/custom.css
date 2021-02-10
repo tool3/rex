@@ -5,7 +5,7 @@
  * work well for content-centric websites.
  */
 
- @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
 
 /* You can override the default Infima variables here. */
 :root {
@@ -17,7 +17,13 @@
   --ifm-color-primary-lighter: #ca3469;
   --ifm-color-primary-lightest: #f55e92;
   --ifm-code-font-size: 95%;
+  --ifm-code-font-weight: 700;
   font-family: "Source Sans Pro";
+  font-weight: 700;
+}
+
+.markdown {
+  font-weight: 400;
 }
 
 .docusaurus-highlight-code-line {
