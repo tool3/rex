@@ -33,12 +33,8 @@ const features = [
     imageUrl: 'img/undraw_To_the_stars_qhyy.svg',
     description: (
       <>
-<<<<<<< HEAD
-        Extend or customize your website layout using React.
-=======
         use the power of shellfie in your terminal<br/>
         <a href="https://github.com/tool3/shellfie-cli">shellfie-cli</a>
->>>>>>> 1b4e816 (chore: align)
       </>
     ),
   },
