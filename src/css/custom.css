@@ -5,7 +5,8 @@
  * work well for content-centric websites.
  */
 
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&family=Palanquin&display=swap");
+ @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap');
+
 
 /* You can override the default Infima variables here. */
 :root {
@@ -17,7 +18,7 @@
   --ifm-color-primary-lighter: #66d4bd;
   --ifm-color-primary-lightest: #92e0d0;
   --ifm-code-font-size: 95%;
-  font-family: "Palanquin";
+  font-family: "Source Sans Pro";
 }
 
 .docusaurus-highlight-code-line {
