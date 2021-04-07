@@ -1,73 +1,80 @@
 module.exports = {
-  title: 'REX',
-  tagline: 'Docusaurus based README docs generator',
-  url: 'https://drex.netlify.app',
-  baseUrl: '/',
-  projectName: 'rex',
-  organizationName: 'tool3',
-  favicon: 'img/favicon.ico',
-  themeConfig: {
-    navbar: {
-      title: 'rex',
-      logo: {
-        alt: 'rex logo',
-        src: 'img/logo.svg',
+  "title": "chartscii",
+  "tagline": "Beautiful ascii bar charts",
+  "url": "https://chartscii.netlify.app",
+  "baseUrl": "/",
+  "projectName": "chartscii",
+  "organizationName": "tool3",
+  "favicon": "img/favicon.ico",
+  "themeConfig": {
+    "navbar": {
+      "title": "chartscii",
+      "logo": {
+        "alt": "chartscii logo",
+        "src": "img/chartscii-logo.png"
       },
-      items: [
+      "items": [
         {
-          to: 'docs/',
-          activeBasePath: 'docs',
-          label: 'Docs',
+          type: 'doc',
           position: 'left',
+          docId: 'chartscii',
+          label: 'Docs',
         },
         {
-          href: 'https://github.com/tool3/rex',
-          position: 'right',
-          className: 'header-github-link',
-          'aria-label': 'GitHub repository',
+          type: 'doc',
+          position: 'left',
+          docId: 'examples/examples',
+          label: 'Examples',
         },
-      ],
-    },
-    footer: {
-      style: 'dark',
-      links: [
         {
-          title: ' ',
-          items: [
-            {
-              label: ' ',
-              className: 'linkedIn',
-              href: 'https://linkedin.com/in/talhayut',
-            },
-            {
-              label: ' ',
-              className: 'github',
-              href: 'https://github.com/tool3',
-            },
-            {
-              label: ' ',
-              className: 'npm',
-              href: 'https://npmjs.com/~tool3',
-            },
-          ],
-        },
-      ],
-      copyright: 'Tal Hayut © 2021',
+          "href": "https://github.com/tool3/chartscii",
+          "position": "right",
+          "className": "header-github-link",
+          "aria-label": "GitHub repository"
+        }
+      ]
     },
+    "footer": {
+      "style": "dark",
+      "links": [
+        {
+          "title": " ",
+          "items": [
+            {
+              "label": " ",
+              "className": "linkedIn",
+              "href": "https://linkedin.com/in/talhayut"
+            },
+            {
+              "label": " ",
+              "className": "github",
+              "href": "https://github.com/tool3"
+            },
+            {
+              "label": " ",
+              "className": "npm",
+              "href": "https://npmjs.com/~tool3"
+            }
+          ]
+        }
+      ],
+      "copyright": "Tal Hayut © 2021"
+    }
   },
-  plugins: [require.resolve('@cmfcmf/docusaurus-search-local')],
-  presets: [
-    [
-      '@docusaurus/preset-classic',
-      {
-        docs: {
-          homePageId: 'welcome',
-          sidebarPath: '/Users/talhayut/projects/rex/sidebars.js',
-        },
-        theme: {
-          customCss: '/Users/talhayut/projects/rex/src/css/custom.css',
-        },
-      },
-    ],
+  "plugins": [
+    "/Users/talhayut/projects/rex/node_modules/@cmfcmf/docusaurus-search-local/src/index.js"
   ],
-};
+  "presets": [
+    [
+      "@docusaurus/preset-classic",
+      {
+        "docs": {
+          "sidebarPath": "/Users/talhayut/projects/rex/sidebars.js"
+        },
+        "theme": {
+          "customCss": "/Users/talhayut/projects/rex/src/css/custom.css"
+        }
+      }
+    ]
+  ]
+}

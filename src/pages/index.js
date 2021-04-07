@@ -5,33 +5,33 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
-import Logo from '../../static/img/logo.black.svg';
+// import Logo from '../../static/img/logo.black.svg';
 
 const features = [
   {
-    title: <><b>R</b>eliable</>,
+    title: <>Create</>,
     imageUrl: 'img/undraw_launch_day_4e04.svg',
     description: (
       <>
-        Seperate pages by HTML comments supplying metadata that will be used to structure your docs.
+        create great bar charts right in your terminal
       </>
     ),
   },
   {
-    title: <><b>E</b>asy</>,
+    title: <>Command</>,
     imageUrl: 'img/undraw_Taken_if77.svg',
     description: (
       <>
-        With a single <code>.js</code> script, turn your README into beautiful docs site.
+        use <a href="https://github.com/tool3/chartscii-cli" target="_blank">chartscii-cli</a> to enjoy bar charts in a single command
       </>
     ),
   },
   {
-    title: <><b>X</b>tendable</>,
+    title: <>Customize</>,
     imageUrl: 'img/undraw_To_the_stars_qhyy.svg',
     description: (
       <>
-        Extend or customize your website layout using React.
+        use conditional coloring, custom ascii characters and more...
       </>
     ),
   },
@@ -63,7 +63,8 @@ function Home() {
       <header className={clsx('hero hero--primary', styles.heroBanner)}>
         <div className="container">
           <div className="heading">
-            <Logo width={200} height={100} />
+            {/* <Logo width={200} height={100} /> */}
+            <img src="img/chartscii-logo.png" width="200" height="200"/>
             <div className="title">{siteConfig.title}</div>
             <div className="description">{siteConfig.tagline}</div>
           </div>
