@@ -34,7 +34,6 @@ const getConfig = () => {
 const writeDocusaurusConfig = async (main) => {
     const configFile = './docusaurus.config.js';
     const path = config.presets[0][1];
-    path.docs.homePageId = main;
     path.docs.sidebarPath = require.resolve('./sidebars.js');
     path.theme.customCss = require.resolve('./src/css/custom.css')
     const string = wrapInExport(config);
@@ -81,17 +80,19 @@ const readHim = async () => {
             const name = `${title.replace(' ', '_').toLowerCase()}`;
             const nameWithExtension = `${title.replace(' ', '_').toLowerCase()}.md`;
             const category = json.category || 'None';
+            const isMain = !main || json.main;
 
             if (!categories[category]) {
                 categories[category || 'None'] = [name];
-                if (!main || json.main) {
+                if (isMain) {
                     main = name
                 }
             } else {
                 categories[category].push(name);
             }
 
-            const data = `---\ntitle: ${title} \n--- ${line[1]} `.replace(`# ${title}`, '');
+            const data = `---\ntitle: ${title}${isMain ? '\nslug: /' : '' && (main = '')} \n--- ${line[1]} `.replace(`# ${title}`, '');
+            
             fs.writeFileSync(`./docs/${nameWithExtension}`, data);
         }
     });
