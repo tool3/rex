@@ -20,11 +20,11 @@
   "author": "Tal Hayut",
   "license": "MIT",
   "dependencies": {
-    "@cmfcmf/docusaurus-search-local": "0.5.0",
     "@docusaurus/core": "^2.0.0-alpha.58",
     "@docusaurus/preset-classic": "^2.0.0-alpha.58",
     "clsx": "^1.1.1",
     "copy": "^0.3.2",
+    "docusaurus-lunr-search": "^2.1.14",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "yargs": "^15.4.1"

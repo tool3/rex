@@ -55,9 +55,7 @@ module.exports = {
       "copyright": "Tal Hayut © 2021"
     }
   },
-  "plugins": [
-    "/Users/talhayut/projects/rex/node_modules/@cmfcmf/docusaurus-search-local/src/index.js"
-  ],
+  "plugins": [require.resolve('docusaurus-lunr-search')],
   "presets": [
     [
       "@docusaurus/preset-classic",
