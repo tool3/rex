@@ -1804,9 +1804,9 @@
   integrity sha512-Klz949h02Gz2uZCMGwDUSDS1YBlTdDDgbWHi+81l29tQALUtvz4rAYi5uoVhE5Lagoq6DeqAUlbrHvW/mXDgdQ==
 
 "@types/node@*":
-  version "16.4.4"
-  resolved "https://registry.npmjs.org/@types/node/-/node-16.4.4.tgz#bb0744c1dcc1fc374f51d3fd41d028331a2420d4"
-  integrity sha512-BH/jX0HjzElFCQdAwaEMwuGBQwm6ViDZ00X6LKdnRRmGWOzkWugEH4+7a0BwfHQ8DfPPCSd/mdsm3Nu8FKFu0w==
+  version "16.4.5"
+  resolved "https://registry.npmjs.org/@types/node/-/node-16.4.5.tgz#eac95d4e52775190c405f0b9061ddcfb0304f7fc"
+  integrity sha512-+0GPv/hIFNoy8r5MFf7vRpBjnqNYNrlHdetoy23E7TYc7JB2ctwyi3GMKpviozaHQ/Sy2kBNUTvG9ywN66zV1g==
 
 "@types/node@^15.0.1":
   version "15.14.3"
@@ -2579,9 +2579,9 @@ caniuse-api@^3.0.0:
     lodash.uniq "^4.5.0"
 
 caniuse-lite@^1.0.0, caniuse-lite@^1.0.30001125, caniuse-lite@^1.0.30001219, caniuse-lite@^1.0.30001243:
-  version "1.0.30001247"
-  resolved "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001247.tgz#105be7a8fb30cdd303275e769a9dfb87d4b3577a"
-  integrity sha512-4rS7co+7+AoOSPRPOPUt5/GdaqZc0EsUpWk66ofE3HJTAajUK2Ss2VwoNzVN69ghg8lYYlh0an0Iy4LIHHo9UQ==
+  version "1.0.30001248"
+  resolved "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001248.tgz#26ab45e340f155ea5da2920dadb76a533cb8ebce"
+  integrity sha512-NwlQbJkxUFJ8nMErnGtT0QTM2TJ33xgz4KXJSMIrjXIbDVdaYueGyjOrLKRtJC+rTiWfi6j5cnZN1NBiSBJGNw==
 
 ccount@^1.0.0, ccount@^1.0.3:
   version "1.1.0"
@@ -8945,9 +8945,9 @@ webpack-sources@^1.1.0, webpack-sources@^1.4.3:
     source-map "~0.6.1"
 
 webpack-sources@^3.0.1:
-  version "3.0.1"
-  resolved "https://registry.npmjs.org/webpack-sources/-/webpack-sources-3.0.1.tgz#518cfabdbde3962f75bbecbacd11d88ab3205252"
-  integrity sha512-LkBxiXJ3tTuhLaS5gz6D6l77Et8mPWlghAe7bbnmi2PyN1CtkiL/YitR+I0pn9PtBC88Irqgg6F9dBJh8+sJRQ==
+  version "3.0.2"
+  resolved "https://registry.npmjs.org/webpack-sources/-/webpack-sources-3.0.2.tgz#29942415daf201a06278f8e2b92e44e564a9288e"
+  integrity sha512-XQ6aGLmqoxZtmpbgwySGhYLNFav1W6+qgMWPGgn6qScxfGrQgMdigkUqZXQ7oB0ydUrvfs9RRyHaSfV153K8Xg==
 
 webpack@^5.40.0:
   version "5.47.0"

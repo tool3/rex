@@ -6,10 +6,13 @@
     "url": "https://github.com/tool3/rex",
     "type": "git"
   },
+  "bin": {
+    "rex": "cli/index.js"
+  },
   "version": "1.0.0",
   "scripts": {
     "start": "docusaurus start",
-    "create": "node create.js && npm run build",
+    "create": "node cli/index.js create && npm run build",
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "GIT_USER=tool3 docusaurus deploy"
