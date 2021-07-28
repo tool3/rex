@@ -56,7 +56,7 @@ module.exports = {
     }
   },
   "plugins": [
-    "/Users/talhayut/projects/rex/node_modules/@cmfcmf/docusaurus-search-local/src/index.js"
+    "/Users/talhayut/projects/rex/node_modules/@cmfcmf/docusaurus-search-local/lib/server/index.js"
   ],
   "presets": [
     [

@@ -36,6 +36,7 @@ const writeDocusaurusConfig = async (main) => {
     const path = config.presets[0][1];
     path.docs.sidebarPath = require.resolve('./sidebars.js');
     path.theme.customCss = require.resolve('./src/css/custom.css')
+    config.plugins = [require.resolve('@cmfcmf/docusaurus-search-local')]
     const string = wrapInExport(config);
     fs.writeFileSync(configFile, string);
 }
