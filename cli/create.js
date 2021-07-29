@@ -36,9 +36,9 @@ async function injectSideBars(categories) {
 async function writeDocusaurusConfig() {
   const configFile = './docusaurus.config.js';
   const path = config.presets[0][1];
-  path.docs.sidebarPath = require.resolve('../sidebars.js');
-  path.theme.customCss = require.resolve('../src/css/custom.css');
-  config.plugins = [require.resolve('@cmfcmf/docusaurus-search-local')];
+  path.docs.sidebarPath = './sidebars.js';
+  path.theme.customCss = '../src/css/custom.css';
+  config.plugins = [require.resolve('docusaurus-lunr-search')];
   const string = wrapInExport(config);
   await write(configFile, string);
 }
@@ -101,10 +101,11 @@ async function create(argv) {
 
   await injectSideBars(categories);
   await writeDocusaurusConfig(main);
-
+  
   if (argv.theme) {
-    const cssPath = './src/css/custom.css';
-    const hex = '32b824';
+    const relative = './src/css/custom.css';
+    const cssPath = path.resolve(relative);
+    const hex = '0088ff';
     const css = await read(cssPath);
     const theme = argv.theme.replace('#', '');
     const regex = new RegExp(hex, 'gi');

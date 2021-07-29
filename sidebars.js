@@ -1,17 +1,12 @@
 module.exports = {
   "docs": [
     {
-      "id": "welcome",
+      "id": "tsiny_",
       "type": "doc"
     },
     {
-      "type": "category",
-      "label": "Getting Started",
-      "items": [
-        "run",
-        "post_actions",
-        "options"
-      ]
+      "id": "api",
+      "type": "doc"
     }
   ]
 }

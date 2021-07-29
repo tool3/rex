@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const yargs = require('yargs');
 const create = require('./create')
 
@@ -18,7 +20,7 @@ yargs
     alias: 't',
     type: 'string',
     desc: 'theme hex color',
-    default: '32b824',
+    default: '0088ff',
   })
   .option('path', {
     alias: 'p',

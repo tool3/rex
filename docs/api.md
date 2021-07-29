@@ -1,11 +1,7 @@
+---
+title: api 
+--- 
 
-# tsiny 
-
-<!-- ![](./server/greeting/tsiny.png) -->
-
-the world's smallest url-shortener service
-
-# api
 
 - `POST /shorten`
 
@@ -15,3 +11,4 @@ the world's smallest url-shortener service
 - `POST /resolve`
   - body: `{ "id": "some_id" }`
   - response: `{ "url": "https://some.long.url.com" }`
+ 

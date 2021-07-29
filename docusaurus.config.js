@@ -21,6 +21,11 @@ module.exports = {
           "position": "left"
         },
         {
+          "to": "blog",
+          "label": "Blog",
+          "position": "left"
+        },
+        {
           "href": "https://github.com/tool3/rex",
           "position": "right",
           "className": "header-github-link",
@@ -55,16 +60,18 @@ module.exports = {
       "copyright": "Tal Hayut © 2021"
     }
   },
-  "plugins": [require.resolve('docusaurus-lunr-search')],
+  "plugins": [
+    "/Users/talhayut/projects/rex/node_modules/docusaurus-lunr-search/src/index.js"
+  ],
   "presets": [
     [
       "@docusaurus/preset-classic",
       {
         "docs": {
-          "sidebarPath": "/Users/talhayut/projects/rex/sidebars.js"
+          "sidebarPath": "./sidebars.js"
         },
         "theme": {
-          "customCss": "/Users/talhayut/projects/rex/src/css/custom.css"
+          "customCss": "../src/css/custom.css"
         }
       }
     ]

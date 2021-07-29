@@ -1,57 +1,55 @@
-import React from 'react';
+import React, {useState} from 'react';
 import clsx from 'clsx';
 import Layout from '@theme/Layout';
-import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
 import Logo from '../../static/img/logo.black.svg';
+import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
+import Loader from "react-loader-spinner";
+import axios from 'axios';
 
-const features = [
-  {
-    title: <><b>R</b>eliable</>,
-    imageUrl: 'img/undraw_launch_day_4e04.svg',
-    description: (
-      <>
-        Seperate pages by HTML comments supplying metadata that will be used to structure your docs.
-      </>
-    ),
-  },
-  {
-    title: <><b>E</b>asy</>,
-    imageUrl: 'img/undraw_Taken_if77.svg',
-    description: (
-      <>
-        With a single <code>.js</code> script, turn your README into beautiful docs site.
-      </>
-    ),
-  },
-  {
-    title: <><b>X</b>tendable</>,
-    imageUrl: 'img/undraw_To_the_stars_qhyy.svg',
-    description: (
-      <>
-        Extend or customize your website layout using React.
-      </>
-    ),
-  },
-];
+function Input() {
+  const [url, setUrl] = useState('');
+  const [shortUrl, setShortUrl] = useState('');
+  const [loading, setLoading] = useState(false);
 
-function Feature({ imageUrl, title, description }) {
-  const imgUrl = useBaseUrl(imageUrl);
-  return (
-    <div className={clsx('col col--4', styles.feature)}>
-      {imgUrl && (
-        <div className="text--center">
-          <img className={styles.featureImage} src={imgUrl} alt={title} />
-        </div>
+  async function handleClick() {
+    setLoading(true)
+    try {
+      const {data: {short_url}} = await axios.post('https://tsiny.herokuapp.com/shorten', {url});
+      setShortUrl(short_url);
+      setLoading(false);
+      console.log(styles)
+    } catch (error) {
+      console.error(error)
+    }
+  }
+  return (  
+    <>
+    <input className="url" type="url" value={url} onChange={(e) => setUrl(e.target.value)} /> 
+    <div className={styles.buttons}>
+    <a
+      className={clsx(
+        'button button--outline button--secondary button--lg button_shorten',
+        styles.getStarted,
       )}
-
-      <h3>{title}</h3>
-      <p>{description}</p>
-    </div>
-  );
+      onClick={handleClick}>
+      Shorten
+    </a>
+  </div>
+  <br />
+  {loading ?  <Loader
+        type="BallTriangle"
+        color="#004888"
+        height={70}
+        width={70}
+        timeout={3000} //3 secs
+      /> : <a className="shortUrl" href={shortUrl} target={"_blank"}>{shortUrl}</a>}
+  </>
+  )
 }
+
 
 function Home() {
   const context = useDocusaurusContext();
@@ -68,31 +66,9 @@ function Home() {
             <div className="description">{siteConfig.tagline}</div>
           </div>
           <br />
-          <div className={styles.buttons}>
-            <Link
-              className={clsx(
-                'button button--outline button--secondary button--lg',
-                styles.getStarted,
-              )}
-              to={useBaseUrl('docs/')}>
-              Get Started
-            </Link>
-          </div>
+          <Input />
         </div>
       </header>
-      <main>
-        {features && features.length > 0 && (
-          <section className={styles.features}>
-            <div className="container">
-              <div className="row">
-                {features.map((props, idx) => (
-                  <Feature key={idx} {...props} />
-                ))}
-              </div>
-            </div>
-          </section>
-        )}
-      </main>
     </Layout >
   );
 }
