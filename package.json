@@ -22,11 +22,14 @@
   "dependencies": {
     "@docusaurus/core": "^2.0.0-alpha.58",
     "@docusaurus/preset-classic": "^2.0.0-alpha.58",
+    "browserslist": "4.16.5",
     "clsx": "^1.1.1",
     "copy": "^0.3.2",
     "docusaurus-lunr-search": "^2.1.14",
+    "glob-parent": "5.1.2",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
+    "trim": "0.0.3",
     "yargs": "^15.4.1"
   },
   "browserslist": {
