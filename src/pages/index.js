@@ -2,9 +2,8 @@ import React, {useState} from 'react';
 import clsx from 'clsx';
 import Layout from '@theme/Layout';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
-import Logo from '../../static/img/logo.black.svg';
+import Logo from '../../static/img/ts_logo.svg';
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import Loader from "react-loader-spinner";
 import axios from 'axios';
@@ -20,7 +19,6 @@ function Input() {
       const {data: {short_url}} = await axios.post('https://tsiny.herokuapp.com/shorten', {url});
       setShortUrl(short_url);
       setLoading(false);
-      console.log(styles)
     } catch (error) {
       console.error(error)
     }
@@ -61,8 +59,7 @@ function Home() {
       <header className={clsx('hero hero--primary', styles.heroBanner)}>
         <div className="container">
           <div className="heading">
-            <Logo width={200} height={100} />
-            <div className="title">{siteConfig.title}</div>
+            <div className="title"><Logo width={200} height={100} />{siteConfig.title}</div>
             <div className="description">{siteConfig.tagline}</div>
           </div>
           <br />

@@ -37,6 +37,12 @@
 .title {
   font-weight: bold;
   font-size: 5em;
+  margin-left: -1em;
+}
+
+.title svg {
+  margin-right: -.6em;
+  margin-bottom: -.1em;
 }
 
 .header-github-link {
@@ -119,7 +125,7 @@ span svg {
 }
 
 .hero--primary {
-  height: 50em;
+  height: 49.8em;
 }
 
 

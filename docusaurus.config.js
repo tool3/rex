@@ -1,28 +1,23 @@
 module.exports = {
-  "title": "REX",
-  "tagline": "Docusaurus based README docs generator",
-  "url": "https://drex.netlify.app",
+  "title": "iny",
+  "tagline": "world's tinest url-shortener service",
+  "url": "https://tsiny.netlify.app",
   "baseUrl": "/",
-  "projectName": "rex",
+  "projectName": "tsiny",
   "organizationName": "tool3",
   "favicon": "img/favicon.ico",
   "themeConfig": {
     "navbar": {
-      "title": "rex",
+      "title": "tsiny",
       "logo": {
-        "alt": "rex logo",
-        "src": "img/logo.svg"
+        "alt": "tsiny logo",
+        "src": "img/ts_logo.svg"
       },
       "items": [
         {
           "to": "docs/",
           "activeBasePath": "docs",
           "label": "Docs",
-          "position": "left"
-        },
-        {
-          "to": "blog",
-          "label": "Blog",
           "position": "left"
         },
         {
