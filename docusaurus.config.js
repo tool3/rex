@@ -7,6 +7,13 @@ module.exports = {
   "organizationName": "tool3",
   "favicon": "img/favicon.ico",
   "themeConfig": {
+    colorMode: {
+     switchConfig: {
+        // Icon for the switch while in dark mode
+        darkIcon: '🌙',
+        lightIcon: '☀️'
+     },
+    },
     "navbar": {
       "title": "tsiny",
       "logo": {
