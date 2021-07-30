@@ -5,33 +5,32 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
-import Logo from '../../static/img/logo.black.svg';
 
 const features = [
   {
-    title: <><b>R</b>eliable</>,
-    imageUrl: 'img/undraw_launch_day_4e04.svg',
+    title: <a target="_blank" href="https://github.com/tool3/repositories"><>repositories</></a>,
+    imageUrl: 'img/github.png',
     description: (
       <>
-        Seperate pages by HTML comments supplying metadata that will be used to structure your docs.
+        see my open source github repositories.
       </>
     ),
   },
   {
-    title: <><b>E</b>asy</>,
-    imageUrl: 'img/undraw_Taken_if77.svg',
+    title: <a target="_blank" href=""><>resume</></a>,
+    imageUrl: 'img/resume.png',
     description: (
       <>
-        With a single <code>.js</code> script, turn your README into beautiful docs site.
+        download my resume.
       </>
     ),
   },
   {
-    title: <><b>X</b>tendable</>,
-    imageUrl: 'img/undraw_To_the_stars_qhyy.svg',
+    title: <a target="_blank" href="mailto:talhayut.dev@gmail.com"><>contact</></a>,
+    imageUrl: 'img/contact.png',
     description: (
       <>
-        Extend or customize your website layout using React.
+        send me an email
       </>
     ),
   },
@@ -63,7 +62,7 @@ function Home() {
       <header className={clsx('hero hero--primary', styles.heroBanner)}>
         <div className="container">
           <div className="heading">
-            <Logo width={200} height={100} />
+            <img src="../../static/img/profile.png" width={200} height={200} />
             <div className="title">{siteConfig.title}</div>
             <div className="description">{siteConfig.tagline}</div>
           </div>
@@ -74,7 +73,7 @@ function Home() {
                 'button button--outline button--secondary button--lg',
                 styles.getStarted,
               )}
-              to={useBaseUrl('docs/')}>
+              to={useBaseUrl('blog/')}>
               Get Started
             </Link>
           </div>

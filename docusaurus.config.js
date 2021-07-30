@@ -1,23 +1,29 @@
 module.exports = {
-  "title": "REX",
-  "tagline": "Docusaurus based README docs generator",
-  "url": "https://drex.netlify.app",
+  "title": "Tal Hayut",
+  "tagline": "senior fullstack developer",
+  "url": "https://tsiny.netlify.app",
   "baseUrl": "/",
-  "projectName": "rex",
+  "projectName": "tool3",
   "organizationName": "tool3",
   "favicon": "img/favicon.ico",
   "themeConfig": {
+    colorMode: {
+     switchConfig: {
+        darkIcon: '🌙',
+        lightIcon: '☀️'
+     },
+    },
     "navbar": {
-      "title": "rex",
+      "title": "tool3",
       "logo": {
-        "alt": "rex logo",
-        "src": "img/logo.svg"
+        "alt": "tsiny logo",
+        "src": "img/profile.png"
       },
       "items": [
         {
-          "to": "docs/",
-          "activeBasePath": "docs",
-          "label": "Docs",
+          "to": "blog/",
+          "activeBasePath": "blog",
+          "label": "Blog",
           "position": "left"
         },
         {
@@ -55,16 +61,15 @@ module.exports = {
       "copyright": "Tal Hayut © 2021"
     }
   },
-  "plugins": [require.resolve('docusaurus-lunr-search')],
+  "plugins": [
+    "/Users/talhayut/projects/rex/node_modules/docusaurus-lunr-search/src/index.js"
+  ],
   "presets": [
     [
       "@docusaurus/preset-classic",
       {
-        "docs": {
-          "sidebarPath": "/Users/talhayut/projects/rex/sidebars.js"
-        },
         "theme": {
-          "customCss": "/Users/talhayut/projects/rex/src/css/custom.css"
+          "customCss": "../src/css/custom.css"
         }
       }
     ]
