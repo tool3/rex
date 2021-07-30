@@ -1,30 +1,29 @@
 module.exports = {
-  "title": "iny",
-  "tagline": "world's tinest url-shortener service",
+  "title": "Tal Hayut",
+  "tagline": "senior fullstack developer",
   "url": "https://tsiny.netlify.app",
   "baseUrl": "/",
-  "projectName": "tsiny",
+  "projectName": "tool3",
   "organizationName": "tool3",
   "favicon": "img/favicon.ico",
   "themeConfig": {
     colorMode: {
      switchConfig: {
-        // Icon for the switch while in dark mode
         darkIcon: '🌙',
         lightIcon: '☀️'
      },
     },
     "navbar": {
-      "title": "tsiny",
+      "title": "tool3",
       "logo": {
         "alt": "tsiny logo",
-        "src": "img/ts_logo.svg"
+        "src": "img/profile.png"
       },
       "items": [
         {
-          "to": "docs/",
-          "activeBasePath": "docs",
-          "label": "Docs",
+          "to": "blog/",
+          "activeBasePath": "blog",
+          "label": "Blog",
           "position": "left"
         },
         {
@@ -69,9 +68,6 @@ module.exports = {
     [
       "@docusaurus/preset-classic",
       {
-        "docs": {
-          "sidebarPath": "./sidebars.js"
-        },
         "theme": {
           "customCss": "../src/css/custom.css"
         }

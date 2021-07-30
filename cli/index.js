@@ -20,7 +20,7 @@ yargs
     alias: 't',
     type: 'string',
     desc: 'theme hex color',
-    default: '0088ff',
+    default: '7a1d2c',
   })
   .option('path', {
     alias: 'p',

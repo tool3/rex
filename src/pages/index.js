@@ -3,51 +3,10 @@ import clsx from 'clsx';
 import Layout from '@theme/Layout';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './styles.module.css';
-import Logo from '../../static/img/ts_logo.svg';
+// import Logo from '../../static/img/cube.png';
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import Loader from "react-loader-spinner";
 import axios from 'axios';
-
-function Input() {
-  const [url, setUrl] = useState('');
-  const [shortUrl, setShortUrl] = useState('');
-  const [loading, setLoading] = useState(false);
-
-  async function handleClick() {
-    setLoading(true)
-    try {
-      const {data: {short_url}} = await axios.post('https://tsiny.herokuapp.com/shorten', {url});
-      setShortUrl(short_url);
-      setLoading(false);
-    } catch (error) {
-      console.error(error)
-    }
-  }
-  return (  
-    <>
-    <input className="url" type="url" value={url} onChange={(e) => setUrl(e.target.value)} /> 
-    <div className={styles.buttons}>
-    <a
-      className={clsx(
-        'button button--outline button--secondary button--lg button_shorten',
-        styles.getStarted,
-      )}
-      onClick={handleClick}>
-      Shorten
-    </a>
-  </div>
-  <br />
-  {loading ?  <Loader
-        type="BallTriangle"
-        color="#004888"
-        height={70}
-        width={70}
-        timeout={3000} //3 secs
-      /> : <a className="shortUrl" href={shortUrl} target={"_blank"}>{shortUrl}</a>}
-  </>
-  )
-}
-
 
 function Home() {
   const context = useDocusaurusContext();
@@ -59,11 +18,9 @@ function Home() {
       <header className={clsx('hero hero--primary', styles.heroBanner)}>
         <div className="container">
           <div className="heading">
-            <div className="title"><Logo width={200} height={100} />{siteConfig.title}</div>
+            <div className="title"><img src="../../static/img/profile.png" width={200} height={200} />{siteConfig.title}</div>
             <div className="description">{siteConfig.tagline}</div>
           </div>
-          <br />
-          <Input />
         </div>
       </header>
     </Layout >

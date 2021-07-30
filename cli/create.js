@@ -105,7 +105,7 @@ async function create(argv) {
   if (argv.theme) {
     const relative = './src/css/custom.css';
     const cssPath = path.resolve(relative);
-    const hex = '0088ff';
+    const hex = '7a1d2c';
     const css = await read(cssPath);
     const theme = argv.theme.replace('#', '');
     const regex = new RegExp(hex, 'gi');
