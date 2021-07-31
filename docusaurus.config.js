@@ -21,10 +21,24 @@ module.exports = {
       },
       "items": [
         {
-          "to": "blog/",
+          "to": "/blog/",
           "activeBasePath": "blog",
-          "label": "Blog",
+          "label": "blog",
           "position": "left"
+        },
+        {
+          "label": "code",
+          "position": "left",
+          "items": [
+            {
+              "label": "servers",
+              "to": "/docs/servers/",
+            },
+            {
+              "label": "libs",
+              "to": "/docs/libs/",
+            }
+          ]
         },
         {
           "href": "https://github.com/tool3/rex",
@@ -68,6 +82,9 @@ module.exports = {
     [
       "@docusaurus/preset-classic",
       {
+        // "docs": {
+        //   "sidebarPath": "/Users/talhayut/projects/rex/sidebars.js"
+        // },
         "theme": {
           "customCss": "../src/css/custom.css"
         }

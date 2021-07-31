@@ -31,8 +31,22 @@
   width: 100%;
 }
 
-.featureImage {
+.torquise {
   height: 200px;
   width: 200px;
-  filter: drop-shadow(2px 4px 6px #d17ceb);
+  filter: drop-shadow(2px 4px 10px #7cdaeb);
+}
+.pink {
+  height: 200px;
+  width: 200px;
+  filter: drop-shadow(2px 4px 10px #e89eff);
+}
+.purple {
+  height: 200px;
+  width: 200px;
+  filter: drop-shadow(2px 4px 10px #832ff1);
+}
+
+.feature {
+  text-align: center;
 }

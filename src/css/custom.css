@@ -83,10 +83,6 @@ span[class*="sun_"]:before {
   margin-left: 2em;
 }
 
-.row {
-  text-align: center;
-}
-
 span svg {
   display: none;
 }

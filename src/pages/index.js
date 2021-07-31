@@ -8,7 +8,8 @@ import styles from './styles.module.css';
 
 const features = [
   {
-    title: <a target="_blank" href="https://github.com/tool3/repositories"><>repositories</></a>,
+    title: <a target="_blank" href="https://github.com/tool3?tab=repositories"><>repositories</></a>,
+    className: 'torquise',
     imageUrl: 'img/github.png',
     description: (
       <>
@@ -17,17 +18,19 @@ const features = [
     ),
   },
   {
-    title: <a target="_blank" href=""><>resume</></a>,
-    imageUrl: 'img/resume.png',
+    title: <a href="./docs/"><>services</></a>,
+    className: 'pink',
+    imageUrl: 'img/wrench.png',
     description: (
       <>
-        download my resume.
+        see some of my server projects.
       </>
     ),
   },
   {
     title: <a target="_blank" href="mailto:talhayut.dev@gmail.com"><>contact</></a>,
-    imageUrl: 'img/contact.png',
+    imageUrl: 'img/email.png',
+    className: 'purple',
     description: (
       <>
         send me an email
@@ -36,13 +39,14 @@ const features = [
   },
 ];
 
-function Feature({ imageUrl, title, description }) {
+function Feature({ className, imageUrl, title, description }) {
   const imgUrl = useBaseUrl(imageUrl);
   return (
+    
     <div className={clsx('col col--4', styles.feature)}>
       {imgUrl && (
         <div className="text--center">
-          <img className={styles.featureImage} src={imgUrl} alt={title} />
+          <img className={styles[className]} src={imgUrl} alt={title} />
         </div>
       )}
 
@@ -62,7 +66,7 @@ function Home() {
       <header className={clsx('hero hero--primary', styles.heroBanner)}>
         <div className="container">
           <div className="heading">
-            <img src="../../static/img/profile.png" width={200} height={200} />
+            <img src="../static/img/profile.png" width={200} height={200} />
             <div className="title">{siteConfig.title}</div>
             <div className="description">{siteConfig.tagline}</div>
           </div>
@@ -85,7 +89,7 @@ function Home() {
             <div className="container">
               <div className="row">
                 {features.map((props, idx) => (
-                  <Feature key={idx} {...props} />
+                  <Feature className="feature" key={idx} {...props} idx={idx} />
                 ))}
               </div>
             </div>
