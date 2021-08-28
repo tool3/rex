@@ -1,10 +1,11 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import clsx from 'clsx';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
+import axios from 'axios';
 
 const features = [
   {
@@ -56,6 +57,21 @@ function Feature({ className, imageUrl, title, description }) {
   );
 }
 
+function Languages() {
+  const [languages, setLanguges] = useState('');
+  useEffect(() => {
+      axios.get('https://wakatime.com/share/@01d1d52d-5fe4-4fbe-89ba-2ee401c977aa/795d6486-0625-43d0-93fb-e1cb9831cd21.json').then(data => {
+        setLanguges(data.data)
+      })
+  }, [languages])
+  return (
+    <div className="language">
+      {languages}
+    </div>
+  )
+
+}
+
 function Home() {
   const context = useDocusaurusContext();
   const { siteConfig = {} } = context;
@@ -88,9 +104,7 @@ function Home() {
           <section className={styles.features}>
             <div className="container">
               <div className="row">
-                {features.map((props, idx) => (
-                  <Feature className="feature" key={idx} {...props} idx={idx} />
-                ))}
+                <Languages />
               </div>
             </div>
           </section>

@@ -7,11 +7,11 @@ module.exports = {
   "organizationName": "tool3",
   "favicon": "img/favicon.ico",
   "themeConfig": {
-    colorMode: {
-     switchConfig: {
-        darkIcon: '🌙',
-        lightIcon: '☀️'
-     },
+    "colorMode": {
+      "switchConfig": {
+        "darkIcon": "🌙",
+        "lightIcon": "☀️"
+      }
     },
     "navbar": {
       "title": "tool3",
@@ -32,11 +32,11 @@ module.exports = {
           "items": [
             {
               "label": "servers",
-              "to": "/docs/servers/",
+              "to": "/docs/servers/"
             },
             {
               "label": "libs",
-              "to": "/docs/libs/",
+              "to": "/docs/libs/"
             }
           ]
         },
@@ -76,17 +76,17 @@ module.exports = {
     }
   },
   "plugins": [
-    "/Users/talhayut/projects/rex/node_modules/docusaurus-lunr-search/src/index.js"
+    "/workspaces/experiments/rex/node_modules/docusaurus-lunr-search/src/index.js"
   ],
   "presets": [
     [
       "@docusaurus/preset-classic",
       {
         // "docs": {
-        //   "sidebarPath": "/Users/talhayut/projects/rex/sidebars.js"
+        //   "sidebarPath": "/workspaces/experiments/rex/sidebars.js"
         // },
         "theme": {
-          "customCss": "../src/css/custom.css"
+          "customCss": "/workspaces/experiments/rex/src/css/custom.css"
         }
       }
     ]
