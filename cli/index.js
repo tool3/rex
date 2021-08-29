@@ -24,7 +24,7 @@ yargs
     alias: 'p',
     type: 'string',
     desc: 'path to README file',
-    default: 'README.md',
+    default: `${process.env.INIT_CWD || process.cwd()}/README.md`,
   })
   .demandCommand(1, 'no arguments provided, run with --help')
   .help()

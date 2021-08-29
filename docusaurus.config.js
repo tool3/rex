@@ -55,16 +55,18 @@ module.exports = {
       "copyright": "Tal Hayut © 2021"
     }
   },
-  "plugins": [require.resolve('docusaurus-lunr-search')],
+  "plugins": [
+    "/workspaces/experiments/rex/node_modules/docusaurus-lunr-search/src/index.js"
+  ],
   "presets": [
     [
       "@docusaurus/preset-classic",
       {
         "docs": {
-          "sidebarPath": "/Users/talhayut/projects/rex/sidebars.js"
+          "sidebarPath": "/workspaces/experiments/rex/sidebars.js"
         },
         "theme": {
-          "customCss": "/Users/talhayut/projects/rex/src/css/custom.css"
+          "customCss": "/workspaces/experiments/rex/src/css/custom.css"
         }
       }
     ]
