@@ -62,7 +62,7 @@ module.exports = {
     }
   },
   "plugins": [
-    "/Users/talhayut/projects/rex/node_modules/@cmfcmf/docusaurus-search-local/src/index.js"
+    "/workspaces/experiments/rex/node_modules/docusaurus-lunr-search/src/index.js"
   ],
   "presets": [
     [
